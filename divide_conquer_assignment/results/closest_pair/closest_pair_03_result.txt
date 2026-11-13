@@ -1,0 +1,198 @@
+ALGORITHM: CLOSEST PAIR OF POINTS (DIVIDE AND CONQUER)
+Input file: closest_pair_03.txt
+Number of points: 180
+Closest pair: (-29577.0, -14381.0) and (-29843.0, -13762.0)
+Minimum distance: 673.733626888253
+Expected time complexity: O(n log n)
+
+WORKING TRACE
+Divide 180 points into 90 left and 90 right.
+  Divide 90 points into 45 left and 45 right.
+    Divide 45 points into 22 left and 23 right.
+      Divide 22 points into 11 left and 11 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 4 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 1 point(s); checked 0 cross-strip pair(s).
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 2 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 11 point(s); checked 3 cross-strip pair(s).
+      Combine: strip has 2 point(s); checked 0 cross-strip pair(s).
+      Divide 23 points into 11 left and 12 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 2 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 11 point(s); checked 3 cross-strip pair(s).
+        Divide 12 points into 6 left and 6 right.
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 2 cross-strip pair(s).
+        Combine: strip has 9 point(s); checked 2 cross-strip pair(s).
+      Combine: strip has 12 point(s); checked 1 cross-strip pair(s).
+    Combine: strip has 4 point(s); checked 0 cross-strip pair(s).
+    Divide 45 points into 22 left and 23 right.
+      Divide 22 points into 11 left and 11 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 2 cross-strip pair(s).
+        Combine: strip has 9 point(s); checked 2 cross-strip pair(s).
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 2 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 2 cross-strip pair(s).
+        Combine: strip has 3 point(s); checked 0 cross-strip pair(s).
+      Combine: strip has 7 point(s); checked 1 cross-strip pair(s).
+      Divide 23 points into 11 left and 12 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 11 point(s); checked 3 cross-strip pair(s).
+        Divide 12 points into 6 left and 6 right.
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 2 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 12 point(s); checked 4 cross-strip pair(s).
+      Combine: strip has 13 point(s); checked 2 cross-strip pair(s).
+    Combine: strip has 2 point(s); checked 0 cross-strip pair(s).
+  Combine: strip has 4 point(s); checked 0 cross-strip pair(s).
+  Divide 90 points into 45 left and 45 right.
+    Divide 45 points into 22 left and 23 right.
+      Divide 22 points into 11 left and 11 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 2 point(s); checked 0 cross-strip pair(s).
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 6 point(s); checked 0 cross-strip pair(s).
+      Combine: strip has 3 point(s); checked 0 cross-strip pair(s).
+      Divide 23 points into 11 left and 12 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 2 cross-strip pair(s).
+        Combine: strip has 7 point(s); checked 0 cross-strip pair(s).
+        Divide 12 points into 6 left and 6 right.
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 5 point(s); checked 0 cross-strip pair(s).
+      Combine: strip has 5 point(s); checked 0 cross-strip pair(s).
+    Combine: strip has 3 point(s); checked 0 cross-strip pair(s).
+    Divide 45 points into 22 left and 23 right.
+      Divide 22 points into 11 left and 11 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 2 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 0 cross-strip pair(s).
+        Combine: strip has 7 point(s); checked 2 cross-strip pair(s).
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 2 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 3 cross-strip pair(s).
+        Combine: strip has 5 point(s); checked 0 cross-strip pair(s).
+      Combine: strip has 7 point(s); checked 0 cross-strip pair(s).
+      Divide 23 points into 11 left and 12 right.
+        Divide 11 points into 5 left and 6 right.
+          Divide 5 points into 2 left and 3 right.
+            Base case: 2 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 5 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+        Combine: strip has 9 point(s); checked 1 cross-strip pair(s).
+        Divide 12 points into 6 left and 6 right.
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 1 cross-strip pair(s).
+          Divide 6 points into 3 left and 3 right.
+            Base case: 3 point(s); checked pairs directly.
+            Base case: 3 point(s); checked pairs directly.
+          Combine: strip has 6 point(s); checked 2 cross-strip pair(s).
+        Combine: strip has 9 point(s); checked 2 cross-strip pair(s).
+      Combine: strip has 1 point(s); checked 0 cross-strip pair(s).
+    Combine: strip has 1 point(s); checked 0 cross-strip pair(s).
+  Combine: strip has 4 point(s); checked 0 cross-strip pair(s).
+Combine: strip has 1 point(s); checked 0 cross-strip pair(s).
